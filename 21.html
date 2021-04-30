@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RE7 21 Game Card Counter</title>
+	<link rel="stylesheet" href="21.css">
+
+</head>
+
+<body>
+	<header>
+		<h2>Resident Evil 7 21 Game Card Counter</h2>
+	</header>
+
+	<script>
+		function changeColor(idname) {
+			if(idname.style && idname.style.backgroundColor){
+			idname.style.backgroundColor = '';
+			idname.style.color = '';
+			}
+			else{
+			idname.style.backgroundColor = '#30A64A';
+			idname.style.color = 'white';
+			}
+		}
+	</script>
+<p>
+	<table>
+		<tr>
+			<td onclick="changeColor(this)">1</td>
+			<td onclick="changeColor(this)">2</td>
+			<td onclick="changeColor(this)">3</td>
+			<td onclick="changeColor(this)">4</td>
+			<td onclick="changeColor(this)">5</td>
+		</tr>
+		<tr>
+			<td onclick="changeColor(this)">6</td>
+			<td onclick="changeColor(this)">7</td>
+			<td onclick="changeColor(this)">8</td>
+			<td onclick="changeColor(this)">9</td>
+			<td onclick="changeColor(this)">10</td>
+			<td onclick="changeColor(this)">11</td>
+		</tr>
+	</table>
+</p>
+
+
+	<div id="reload-button" onclick="reloadButton()">Reload</div>
+	<script>
+		function reloadButton() {
+			window.location.reload();
+		}
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+}
+
+table {
+	margin-left: auto;
+    margin-right: auto;
+
+	border-collapse: collapse;
+	font-family: monospace;
+	font-size: 1.5em;
+	table-layout: fixed;
+	text-align: center;
+	width: 90%;
+	white-space: nowrap;
+
+}
+
+td {
+	border: 1px solid black;
+    padding: 3% 3%;
+}
+
+#reload-button {
+	border: 1px solid black;
+	font-size: 1.5em;
+	text-align: center;
+}

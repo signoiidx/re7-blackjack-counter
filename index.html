@@ -13,18 +13,6 @@
 		<h2>Resident Evil 7 21 Game Card Counter</h2>
 	</header>
 
-	<script>
-		function changeColor(idname) {
-			if(idname.style && idname.style.backgroundColor){
-			idname.style.backgroundColor = '';
-			idname.style.color = '';
-			}
-			else{
-			idname.style.backgroundColor = '#30A64A';
-			idname.style.color = 'white';
-			}
-		}
-	</script>
 <p>
 	<table>
 		<tr>
@@ -46,14 +34,8 @@
 </p>
 
 
-	<div id="reload-button" onclick="reloadButton()">Reload</div>
-	<script>
-		function reloadButton() {
-			window.location.reload();
-		}
-	</script>
-
-
+        <div id="reload-button" onclick="reloadButton()">Reload</div>
+        <script src="app.js"></script>
 </body>
 
 </html>

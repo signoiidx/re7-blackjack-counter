@@ -1,6 +1,3 @@
-/**
- * @jest-environment jsdom
- */
 const { changeColor, reloadButton } = require('./app');
 
 describe('changeColor', () => {
@@ -18,8 +15,7 @@ describe('changeColor', () => {
 describe('reloadButton', () => {
   test('calls window.location.reload', () => {
     const reloadMock = jest.fn();
-    delete window.location;
-    window.location = { reload: reloadMock };
+    global.window = { location: { reload: reloadMock } };
     reloadButton();
     expect(reloadMock).toHaveBeenCalled();
   });

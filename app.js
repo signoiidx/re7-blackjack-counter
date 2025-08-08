@@ -9,7 +9,13 @@ function changeColor(idname) {
 }
 
 function reloadButton() {
-  window.location.reload();
+  if (
+    typeof window !== 'undefined' &&
+    window.location &&
+    typeof window.location.reload === 'function'
+  ) {
+    window.location.reload();
+  }
 }
 
 if (typeof window !== 'undefined') {
